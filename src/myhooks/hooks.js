@@ -15,8 +15,8 @@ export function extractFromAIResponse({ message }) {
     const parsed = JSON.parse(match[1].trim());
     console.log("✅ Parsed JSON from AI response successfully");
     return parsed;
-  } catch (err) {
-    console.error("❌ Failed to parse quiz JSON:", match[1]);
+  } catch (error) {
+    console.error("❌ Failed to parse quiz JSON:", match[1], error);
     throw new Error("Invalid JSON format in AI response.");
   }
 }

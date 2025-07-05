@@ -76,7 +76,7 @@ export async function POST(req) {
 }
 
 
-export async function GET(req) {
+export async function GET() {
     await dbConnect();
     const session = await getServerSession(authOptions);
     const user = session?.user;

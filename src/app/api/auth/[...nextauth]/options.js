@@ -4,10 +4,6 @@ import CredentialsProvider from "next-auth/providers/credentials";
 import bcrypt from "bcryptjs";
 import dbConnect from "@/lib/database";
 import Usermodel from "@/model/user.model";
-import { signIn } from "next-auth/react";
-
-
-
 
 
 
